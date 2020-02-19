@@ -1,0 +1,42 @@
+/* Buen fin */
+$buenfin: red;
+#buenfin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 10px solid red;
+    z-index: 1032;
+    picture {
+        position: fixed;
+        @media (min-width:map-get($md,min)){
+            left: 0;
+            right: 0;
+            text-align: center;
+            height: 0;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+}
+footer {
+    background: $buenfin;
+    color: white;
+    a {
+        color:white;
+        &:hover {
+            color:white;
+        }
+    }
+}
+.navbar {
+    @media (min-width:map-get($md,min)){
+        background: $buenfin;
+    }
+}
+.tapit {
+    border-color: $buenfin;
+}

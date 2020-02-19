@@ -1,0 +1,80 @@
+/* SCSS button tapit */
+.tapit {
+  width: 104px;
+  height: 104px;
+  border: 6px solid black;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100%;
+  -webkit-animation: tap 10s infinite alternate;
+          animation: tap 10s infinite alternate;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  top: 100vh;
+  left: 5%;
+  right: 5%;
+  margin: auto;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  cursor: pointer;
+}
+
+.tapit:before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background: white;
+  border-radius: 100%;
+  top: 10%;
+  right: 30%;
+}
+
+.tapit:after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: white;
+  border-radius: 100%;
+  top: 30%;
+  right: 15%;
+}
+
+@-webkit-keyframes tap {
+  0% {
+    background: radial-gradient(circle, white 30%, white);
+  }
+  25% {
+    background: radial-gradient(circle, #5fb6e5 30%, white);
+  }
+  50% {
+    background: radial-gradient(circle, #fdd835 30%, white);
+  }
+  75% {
+    background: radial-gradient(circle, #93c543 30%, white);
+  }
+  100% {
+    background: radial-gradient(circle, #ec372c 30%, white);
+  }
+}
+
+@keyframes tap {
+  0% {
+    background: radial-gradient(circle, white 30%, white);
+  }
+  25% {
+    background: radial-gradient(circle, #5fb6e5 30%, white);
+  }
+  50% {
+    background: radial-gradient(circle, #fdd835 30%, white);
+  }
+  75% {
+    background: radial-gradient(circle, #93c543 30%, white);
+  }
+  100% {
+    background: radial-gradient(circle, #ec372c 30%, white);
+  }
+}
+/*# sourceMappingURL=btn-menu.css.map */
